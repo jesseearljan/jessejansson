@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import React, { useRef } from "react"
+import Link from 'next/link'
 import { push as Menu } from 'react-burger-menu'
 import '../assets/styles/globals.scss'
 
@@ -31,10 +32,20 @@ function MyApp({ Component, pageProps, router }) {
           />
           } 
           pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } width={ 175 } burgerButtonClassName={ "burgerMenu" }>
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="projects" className="menu-item" href="/projects">Projects</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
+        <ul>
+          <li>
+            <Link id="home" className="menu-item" href="/">Home</Link>
+          </li>
+          <li>
+            <Link id="about" className="menu-item" href="/about">About</Link>
+          </li>
+          <li>
+            <Link id="projects" className="menu-item" href="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link id="contact" className="menu-item" href="/contact">Contact</Link>
+          </li>
+        </ul>
       </Menu>
       <main id="page-wrap">
         <Component {...pageProps} />
