@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html,
 body {
   padding: 0;
@@ -22,8 +24,8 @@ a {
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 36px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   right: 36px;
   top: 36px;
 }
@@ -60,25 +62,42 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #1A1F31;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: #5a5a5a;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
+  color: #9b9b9b;
+  padding: 0.7em;
+}
+
+.navItem {
+  outline: none;
+}
+
+.active {
+  font-weight: 700;
+  color: #fff;
+  outline:none;
 }
 
 /* Individual item */
-.bm-item {
+.bmitem {
   display: inline-block;
+}
+
+li:hover {
+  color: #e2e2e2;
+  transition: color .25s ease;
 }
 
 /* Styling of overlay */

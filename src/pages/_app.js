@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import React, { useRef } from "react"
 import Link from 'next/link'
 import { push as Menu } from 'react-burger-menu'
-import '../assets/styles/globals.scss'
+import styles from '../assets/styles/globals.scss'
 
 function MyApp({ Component, pageProps, router }) {
   const ref = useRef(null);
@@ -32,20 +32,18 @@ function MyApp({ Component, pageProps, router }) {
           />
           } 
           pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } width={ 175 } burgerButtonClassName={ "burgerMenu" }>
-        <ul>
-          <li>
-            <Link id="home" className="menu-item" href="/">Home</Link>
+          <li className={`navItem ${router.pathname == "/" ? "active" : ""}`}>
+            <Link id="home" href="/">Home</Link>
           </li>
-          <li>
-            <Link id="about" className="menu-item" href="/about">About</Link>
+          <li className={router.pathname == "/about" ? "active" : ""}>
+            <Link id="about" href="/about">About</Link>
           </li>
-          <li>
-            <Link id="projects" className="menu-item" href="/projects">Projects</Link>
+          <li className={router.pathname == "/projects" ? "active" : ""}>
+            <Link id="projects" href="/projects">Projects</Link>
           </li>
-          <li>
-            <Link id="contact" className="menu-item" href="/contact">Contact</Link>
+          <li className={router.pathname == "/contact" ? "active" : ""}>
+            <Link id="contact" href="/contact">Contact</Link>
           </li>
-        </ul>
       </Menu>
       <main id="page-wrap">
         <Component {...pageProps} />
