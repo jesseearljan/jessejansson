@@ -1,0 +1,77 @@
+$primary-color: #7afd00;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+  background-color: #f876de;
+  background: linear-gradient(-45deg, #ee7752, #e05a7b, #69C9D0, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: calc(5px + 1.5vmin);
+  line-height: 1.5;
+  overflow: hidden;
+  color: #FFF;
+  text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.BtnPlcmnt {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.BtnStyl {
+  position: relative;
+  background-color: #1A1F31;
+  border: none;
+  border-radius: 50px;
+  font-size: calc(10px + 1vmin);
+  font-weight: 400;
+  color: #878787;
+  padding: 10px 25px 10px 25px;
+  text-align: center;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  animation: load 9s ease-in-out;
+}
+
+.BtnStyl:hover {
+  background-color: #363c4e;
+  color: #d8d8d8;
+}
+
