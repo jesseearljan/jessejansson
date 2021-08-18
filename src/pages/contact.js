@@ -11,7 +11,7 @@ export default function Contact() {
       if ( !field.name ) return;
       formData[field.name] = field.value;
     });
-    fetch('/api/mail', {
+    fetch('https://jessejansson.com/.netlify/functions/next_api_mail', {
       method: 'post',
       body: JSON.stringify(formData)
     })
