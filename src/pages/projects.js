@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { useRef } from "react"
 import styles from '../assets/styles/Projects.module.scss'
 
-export default function projects() {
+export default function Projects() {
   const ref = useRef(null);
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { useRef } from "react"
 import styles from '../assets/styles/Contact.module.scss'
 
-export default function contact() {
+export default function Contact() {
   const ref = useRef(null);
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");

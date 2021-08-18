@@ -4,7 +4,7 @@ import Typical from 'react-typical'
 import React, { useRef } from "react"
 import styles from '../assets/styles/About.module.scss'
 
-export default function about() {
+export default function About() {
   const ref = useRef(null);
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");
