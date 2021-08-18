@@ -23,7 +23,11 @@ export default (req, res) => {
     html: message.replace(/\r\n/g, '<br>')
   };
 
+  try {
   mail.send(data)
-
+  }
+  catch {
+    console.error(error);
+  }
   res.status(200).json({ status: 'Ok' })
 }
