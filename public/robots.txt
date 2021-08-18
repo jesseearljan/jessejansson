@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /projects
+Crawl-delay: 1

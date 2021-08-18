@@ -24,6 +24,9 @@ export default function Home() {
         <meta charSet="utf-8" />
         <title>Home - Jesse jansson</title>
         <meta name="description" content="Bekijk het portfolio van Jesse Jansson via jessejansson.com over (web)developer zijn" />
+        <meta name="author" content="Jesse Jansson" />
+        <meta name="keywords" content="Jesse, Jansson, Jesse Jansson, web developer, developer, 21 jaar, Rotterdam, Nederland, Nederlands, Netherlands, Holland, coding, programmeur, programmeren" />
+        <meta name="application-name" content="Jesse Jansson" />
         <link rel="icon" href="/favicon.ico" />
 
         <meta property="og:type" content="website" />
