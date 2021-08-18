@@ -28,35 +28,38 @@ export default function Home() {
       </Head>
       
       <main className={styles.main}>
-      <motion.div initial="visible" animate="hidden" 
-        variants={{
-          visible: {
-            opacity: 1,
-            pointerEvents: "auto",
-            },
-          hidden: {
-            opacity: 0,
-            pointerEvents: "none",
-            transition: {
-              delay: 4
-            }
-          }
-        }}
-        style={{
-          backgroundColor: "#FFF",
-          height: "100vh",
-          width: "100vw",
-          overflow: "hidden",
-          zIndex: 5,
-          position: "absolute",
-        }}> 
-          <lottie-player
-            ref={ref}
-            autoplay
-            keepLastFrame
-            src="https://assets7.lottiefiles.com/private_files/lf30_b8ldmnne.json"
-          />
-      </motion.div>
+          <motion.div initial="visible" animate="hidden" 
+            variants={{
+              visible: {
+                opacity: 1,
+                pointerEvents: "auto",
+                },
+              hidden: {
+                opacity: 0,
+                pointerEvents: "none",
+                transition: {
+                  delay: 4
+                }
+              }
+            }}
+            style={{
+              position: "absolute",
+              display: "flex",
+              minHeight: "100vh",
+              minHeight: "-webkit-fill-available",
+              top: "0",
+              width: "100%",
+              backgroundColor: "white",
+              zIndex: 2,
+            }}> 
+              <lottie-player
+                ref={ref}
+                autoplay
+                keepLastFrame
+                src="https://assets7.lottiefiles.com/private_files/lf30_b8ldmnne.json"
+                style={{ margin: "auto", width: "25rem", height: "25rem"}}
+              />
+          </motion.div>
           <div className={styles.title}>
             <Typical wrapper="h1" steps={steps} loop={Infinity} />
           </div>

@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow: hidden;
 }
 
 a {
@@ -15,10 +16,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-#outer-container {
-  background-color: #5a5a5a!important;
 }
 
 /* Position and sizing of burger button */
