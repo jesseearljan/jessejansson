@@ -21,7 +21,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <meta charSet="utf-8" />
         <title>Home - Jesse jansson</title>
         <meta name="description" content="Bekijk het portfolio van Jesse Jansson via jessejansson.com over (web)developer zijn" />
