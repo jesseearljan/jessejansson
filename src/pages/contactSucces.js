@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { useRef } from "react"
 import styles from '../assets/styles/Contact.module.scss'
 
-export default function Contact() {
+export default function ContactSucces() {
   const ref = useRef(null);
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");
@@ -21,30 +21,12 @@ export default function Contact() {
       <main className={styles.main}>
         <div className={styles.contactForm}>
         <h1 className={styles.title}>
-          Contact
+          message sent
         </h1>
-        <form name="contact" action="/contactSucces" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-          <p className={styles.p}>
-            <label htmlFor="name">Name</label>
-            <input className={styles.input} type="text" id="name" name="name" placeholder="Write your name here.."/>
-          </p>
-          <p className={styles.p}>
-            <label htmlFor="email">E-mail</label>
-            <input className={styles.input} type="email" id="email" name="email" placeholder="Let me know how to contact you back.." />
-          </p>
-          <p className={styles.p}>
-            <label htmlFor="message">Message</label>
-            <textarea className={styles.input} id="message" name="message" placeholder="What would you like to tell me.." />
-          </p>
-          <p className={styles.p}>
-            <button className={styles.button} type="submit">Send</button>
-          </p>
-        </form>
         </div>
         <div className={styles.footer}>
             <div className={styles.previous}>
-              <Link href="/projects">
+              <Link href="/contact">
               <lottie-player
                 ref={ref}
                 autoplay
