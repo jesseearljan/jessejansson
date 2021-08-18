@@ -19,6 +19,7 @@ export default function about() {
         </h1>
         <div className={styles.grid}>
           <a 
+            rel="noreferrer"
             target="_blank"
             href="https://jessejansson.com/" 
             className={styles.card}>
@@ -27,6 +28,7 @@ export default function about() {
           </a>
 
           <a 
+            rel="noreferrer"
             target="_blank"
             href="https://cococurlsroom.nl/" 
             className={styles.card}>
@@ -35,6 +37,7 @@ export default function about() {
           </a>
 
           <a
+            rel="noreferrer"
             target="_blank"
             href="https://janssonscooters.nl/"
             className={styles.card}
@@ -44,6 +47,7 @@ export default function about() {
           </a>
 
           <a
+            rel="noreferrer"
             target="_blank"
             href="https://jessejansson.com/contact"
             className={styles.card}
