@@ -4,18 +4,6 @@ import React, { useRef } from "react"
 import styles from '../assets/styles/Contact.module.scss'
 
 export default function Contact() {
-  async function handleOnSubmit(e) {
-    e.preventDefault();
-    const formData = {}
-    Array.from(e.currentTarget.elements).forEach(field => {
-      if ( !field.name ) return;
-      formData[field.name] = field.value;
-    });
-    fetch('https://jessejansson.com/.netlify/functions/next_api_mail', {
-      method: 'post',
-      body: JSON.stringify(formData)
-    })
-  }
   const ref = useRef(null);
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");
@@ -35,7 +23,7 @@ export default function Contact() {
         <h1 className={styles.title}>
           Contact
         </h1>
-        <form method="post" onSubmit={handleOnSubmit}>
+        <form action="POST" data-netlify="true">
           <p className={styles.p}>
             <label htmlFor="name">Name</label>
             <input className={styles.input} type="text" name="name" placeholder="Write your name here.."/>
