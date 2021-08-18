@@ -22,9 +22,21 @@ export default function Home() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <title>Jesse Jansson</title>
+        <title>Home - Jesse jansson</title>
         <meta name="description" content="Bekijk het portfolio van Jesse Jansson via jessejansson.com over (web)developer zijn" />
         <link rel="icon" href="/favicon.ico" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jessejansson.com/" />
+        <meta property="og:title" content="Jesse Jansson" />
+        <meta property="og:description" content="Bekijk het portfolio van Jesse Jansson via jessejansson.com over (web)developer zijn" />
+        <meta property="og:image" content="https://res.cloudinary.com/dhi2hmlmj/image/upload/v1629286996/ogpicture.jpg" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://jessejansson.com/" />
+        <meta property="twitter:title" content="Jesse Jansson" />
+        <meta property="twitter:description" content="Bekijk het portfolio van Jesse Jansson via jessejansson.com over (web)developer zijn" />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dhi2hmlmj/image/upload/v1629286996/ogpicture.jpg" />
       </Head>
       
       <main className={styles.main}>

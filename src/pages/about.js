@@ -15,7 +15,7 @@ export default function about() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <title>About Jesse Jansson</title>
+        <title>About - Jesse jansson</title>
         <meta name="description" content="Alles over Jesse Jansson, gevestigd in Hillergersberg/Schiebroek Rotterdam" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
