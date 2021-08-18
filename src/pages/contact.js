@@ -34,7 +34,7 @@ export default function Contact() {
           </p>
           <p className={styles.p}>
             <label htmlFor="message">Message</label>
-            <input className={styles.input} name="message" placeholder="What would you like to tell me.." />
+            <textarea className={styles.input} name="message" placeholder="What would you like to tell me.." />
           </p>
           <p className={styles.p}>
             <input className={styles.button} type="submit" value="Submit" />
