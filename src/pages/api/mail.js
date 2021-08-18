@@ -24,9 +24,7 @@ export default (req, res) => {
   };
 
 
-  await
-
-  mail.send(data)
+  await mail.send(data)
 
   res.status(200).json({ status: 'Ok' })
 }
