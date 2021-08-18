@@ -72,3 +72,11 @@ $primary-color: #7afd00;
   color: #d8d8d8;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+  justify-content: space-between;
+}

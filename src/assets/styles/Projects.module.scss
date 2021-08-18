@@ -84,3 +84,12 @@ $primary-color: #83f1c5;
   font-size: calc(6px + 1vmin);
   line-height: 1.25;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+  justify-content: space-between;
+}

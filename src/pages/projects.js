@@ -1,8 +1,13 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
+import React, { useRef } from "react"
 import styles from '../assets/styles/Projects.module.scss'
 
-export default function about() {
+export default function projects() {
+  const ref = useRef(null);
+  React.useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
   return (
     <div className={styles.container}>
       <Head>
@@ -56,6 +61,32 @@ export default function about() {
             <p>Maybe your next website will be in this section.</p>
           </a>
         </div>
+        <div className={styles.footer}>
+            <div className={styles.previous}>
+              <Link href="/about">
+              <lottie-player
+                ref={ref}
+                autoplay
+                loop
+                speed="0.75"
+                src="https://assets1.lottiefiles.com/packages/lf20_5raeqww9.json"
+                style={{ marginLeft: "1rem", transform: "rotate(90deg)", width: "5rem", height: "5rem"}}
+              />
+              </Link>
+            </div>
+            <div className={styles.next}>
+              <Link href="/contact">
+              <lottie-player
+                ref={ref}
+                autoplay
+                loop
+                speed="0.75"
+                src="https://assets1.lottiefiles.com/packages/lf20_5raeqww9.json"
+                style={{ marginRight: "1rem", transform: "rotate(-90deg)", width: "5rem", height: "5rem"}}
+              />
+              </Link>
+            </div>
+          </div>
       </main>
     </div>
   )

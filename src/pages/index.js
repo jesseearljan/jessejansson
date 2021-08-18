@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import React, { useRef } from "react"
@@ -85,6 +84,7 @@ export default function Home() {
                     </a>
                 </Link>
           </div>
+          
       </main>
     </div>
   )

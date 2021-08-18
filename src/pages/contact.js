@@ -1,8 +1,13 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
+import React, { useRef } from "react"
 import styles from '../assets/styles/Contact.module.scss'
 
-export default function about() {
+export default function contact() {
+  const ref = useRef(null);
+  React.useEffect(() => {
+    import("@lottiefiles/lottie-player");
+  });
   return (
     <div className={styles.container}>
       <Head>
@@ -18,6 +23,32 @@ export default function about() {
         <h1 className={styles.title}>
           Welcome to Contact <a href="https://jessejansson.com">Jessejansson.com!</a>
         </h1>
+        <div className={styles.footer}>
+            <div className={styles.previous}>
+              <Link href="/projects">
+              <lottie-player
+                ref={ref}
+                autoplay
+                loop
+                speed="0.75"
+                src="https://assets1.lottiefiles.com/packages/lf20_5raeqww9.json"
+                style={{ marginLeft: "1rem", transform: "rotate(90deg)", width: "5rem", height: "5rem"}}
+              />
+              </Link>
+            </div>
+            <div className={styles.next}>
+              <Link href="/">
+              <lottie-player
+                ref={ref}
+                autoplay
+                loop
+                speed="0.75"
+                src="https://assets1.lottiefiles.com/packages/lf20_5raeqww9.json"
+                style={{ marginRight: "1rem", transform: "rotate(-90deg)", width: "5rem", height: "5rem"}}
+              />
+              </Link>
+            </div>
+          </div>
       </main>
     </div>
   )

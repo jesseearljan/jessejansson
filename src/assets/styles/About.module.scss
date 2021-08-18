@@ -59,3 +59,12 @@ $primary-color: #4c6f2c;
   max-width: 75%;
   font-size: calc(4px + 3vmin);
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+  justify-content: space-between;
+}
