@@ -26,18 +26,18 @@ export default function Contact() {
         <form name="contact" method="POST" data-netlify="true">
           <p className={styles.p}>
             <label htmlFor="name">Name</label>
-            <input className={styles.input} type="text" name="name" placeholder="Write your name here.."/>
+            <input className={styles.input} type="text" id="name" name="name" placeholder="Write your name here.."/>
           </p>
           <p className={styles.p}>
             <label htmlFor="email">E-mail</label>
-            <input className={styles.input} type="email" name="email" placeholder="Let me know how to contact you back.." />
+            <input className={styles.input} type="email" id="email" name="email" placeholder="Let me know how to contact you back.." />
           </p>
           <p className={styles.p}>
             <label htmlFor="message">Message</label>
-            <textarea className={styles.input} name="message" placeholder="What would you like to tell me.." />
+            <textarea className={styles.input} id="message" name="message" placeholder="What would you like to tell me.." />
           </p>
           <p className={styles.p}>
-            <input className={styles.button} type="submit" value="Submit" />
+            <button className={styles.button} type="submit">Send</button>
           </p>
         </form>
         </div>
