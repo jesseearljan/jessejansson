@@ -23,8 +23,7 @@ export default (req, res) => {
     html: message.replace(/\r\n/g, '<br>')
   };
 
-
-  await mail.send(data)
+  mail.send(data)
 
   res.status(200).json({ status: 'Ok' })
 }
