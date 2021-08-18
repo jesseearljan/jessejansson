@@ -4,6 +4,18 @@ import React, { useRef } from "react"
 import styles from '../assets/styles/Contact.module.scss'
 
 export default function Contact() {
+  async function handleOnSubmit(e) {
+    e.preventDefault();
+    const formData = {}
+    Array.from(e.currentTarget.elements).forEach(field => {
+      if ( !field.name ) return;
+      formData[field.name] = field.value;
+    });
+    fetch('./api/mail', {
+      method: 'post',
+      body: JSON.stringify(formData)
+    })
+  }
   const ref = useRef(null);
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");
@@ -19,10 +31,28 @@ export default function Contact() {
       </Head>
 
       <main className={styles.main}>
-      
+        <div className={styles.contactForm}>
         <h1 className={styles.title}>
-          Welcome to Contact <a href="https://jessejansson.com">Jessejansson.com!</a>
+          Contact
         </h1>
+        <form method="post" onSubmit={handleOnSubmit}>
+          <p className={styles.p}>
+            <label htmlFor="name">Name</label>
+            <input className={styles.input} type="text" name="name" placeholder="Write your name here.."/>
+          </p>
+          <p className={styles.p}>
+            <label htmlFor="email">E-mail</label>
+            <input className={styles.input} type="email" name="email" placeholder="Let me know how to contact you back.." />
+          </p>
+          <p className={styles.p}>
+            <label htmlFor="message">Message</label>
+            <input className={styles.input} name="message" placeholder="What would you like to tell me.." />
+          </p>
+          <p className={styles.p}>
+            <input className={styles.button} type="submit" value="Submit" />
+          </p>
+        </form>
+        </div>
         <div className={styles.footer}>
             <div className={styles.previous}>
               <Link href="/projects">
