@@ -21,8 +21,23 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <title>About - Jesse jansson</title>
-        <meta name="description" content="Alles over Jesse Jansson, gevestigd in Hillergersberg/Schiebroek Rotterdam" />
+        <meta name="description" content="Alles over Jesse Jansson, gevestigd in Hillergersberg/Schiebroek Rotterdam." />
+        <meta name="author" content="Jesse Jansson" />
+        <meta name="keywords" content="Jesse, Jansson, Jesse Jansson, web developer, developer, 21 jaar, Rotterdam, Nederland, Nederlands, Netherlands, Holland, coding, programmeur, programmeren, about, over, over jesse jansson" />
+        <meta name="application-name" content="Jesse Jansson" />
         <link rel="icon" href="/favicon.ico" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://jessejansson.com/about" />
+        <meta property="og:title" content="Over - Jesse Jansson" />
+        <meta property="og:description" content="Alles over Jesse Jansson, gevestigd in Hillergersberg/Schiebroek Rotterdam." />
+        <meta property="og:image" content="https://res.cloudinary.com/dhi2hmlmj/image/upload/v1629332452/ogpictureabout.jpg" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://jessejansson.com/about" />
+        <meta property="twitter:title" content="Over - Jesse Jansson" />
+        <meta property="twitter:description" content="Alles over Jesse Jansson, gevestigd in Hillergersberg/Schiebroek Rotterdam." />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dhi2hmlmj/image/upload/v1629332452/ogpictureabout.jpg" />
       </Head>
 
       <main className={styles.main}>
