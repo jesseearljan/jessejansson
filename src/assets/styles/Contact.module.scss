@@ -41,7 +41,6 @@ $primary-color: #ca0000;
   font-weight: 500;
   font-size: calc(5px + 2vmin);
   line-height: 1.5;
-  color: rgb(255, 255, 255);
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
   margin:10px 0;
   padding-bottom:10px;
@@ -73,6 +72,55 @@ $primary-color: #ca0000;
   position:relative
 }
 
+.contactFormSucces {
+  width:340px;
+  background:#85ffa0;
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  margin:calc(50vh - 220px) auto;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative
+}
+
+.previous .hiddenChild{
+  opacity: 0;
+  padding-left: 1.75rem;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+
+.previous:hover .hiddenChild{
+  opacity: 1;
+}
+
+.next .hiddenChild{
+  opacity: 0;
+  padding-left: 0.75rem;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+
+.next:hover .hiddenChild{
+  opacity: 1;
+}
+
+
+.titleSucces {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: calc(5px + 2vmin);
+  line-height: 1.5;
+  text-shadow: 0px 2px 1px #00000025;
+  margin:10px 0;
+  padding-bottom:10px;
+  color:#000000;
+  border-bottom:3px solid #78788c
+}
+
 .input {
   width:100%;
   padding:10px;
@@ -97,6 +145,7 @@ $primary-color: #ca0000;
   font-size:14px;
   color:#5a5a5a
 }
+
 .button {
   float:right;
   padding:8px 12px;
@@ -105,7 +154,7 @@ $primary-color: #ca0000;
   border:2px solid #78788c;
   background:0;
   color:#5a5a6e;
-  cursor:pointer;
+  cursor: pointer;
   transition:all .3s
 }
 

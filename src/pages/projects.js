@@ -63,6 +63,7 @@ export default function Projects() {
         </div>
         <div className={styles.footer}>
             <div className={styles.previous}>
+            <span className={styles.hiddenChild}>About</span>
               <Link href="/about">
               <lottie-player
                 ref={ref}
@@ -75,6 +76,7 @@ export default function Projects() {
               </Link>
             </div>
             <div className={styles.next}>
+            <span className={styles.hiddenChild}>Contact</span>
               <Link href="/contact">
               <lottie-player
                 ref={ref}

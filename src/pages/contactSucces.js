@@ -19,13 +19,15 @@ export default function ContactSucces() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.contactForm}>
-        <h1 className={styles.title}>
-          message sent
-        </h1>
+        <div className={styles.contactFormSucces}>
+          <h1 className={styles.titleSucces}>
+            Thankyou!
+          </h1>
+          <p>Your message has been sent</p>
         </div>
         <div className={styles.footer}>
             <div className={styles.previous}>
+              <span className={styles.hiddenChild}>Contact</span>
               <Link href="/contact">
               <lottie-player
                 ref={ref}
@@ -36,8 +38,10 @@ export default function ContactSucces() {
                 style={{ marginLeft: "1rem", transform: "rotate(90deg)", width: "5rem", height: "5rem"}}
               />
               </Link>
+              
             </div>
             <div className={styles.next}>
+              <span className={styles.hiddenChild}>Home</span>
               <Link href="/">
               <lottie-player
                 ref={ref}

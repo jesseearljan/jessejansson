@@ -36,6 +36,7 @@ export default function About() {
         </div>
         <div className={styles.footer}>
             <div className={styles.previous}>
+              <span className={styles.hiddenChild}>Home</span>
               <Link href="/">
               <lottie-player
                 ref={ref}
@@ -48,6 +49,7 @@ export default function About() {
               </Link>
             </div>
             <div className={styles.next}>
+              <span className={styles.hiddenChild}>Projects</span>
               <Link href="/projects">
               <lottie-player
                 ref={ref}

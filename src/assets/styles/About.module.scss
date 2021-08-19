@@ -45,6 +45,29 @@ $primary-color: #4c6f2c;
   min-width: 100vw;
 }
 
+
+.previous .hiddenChild{
+  opacity: 0;
+  padding-left: 2.5rem;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+
+.previous:hover .hiddenChild{
+  opacity: 1;
+}
+
+.next .hiddenChild{
+  opacity: 0;
+  padding-left: 0.75rem;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+
+.next:hover .hiddenChild{
+  opacity: 1;
+}
+
 .aboutHero {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
