@@ -52,7 +52,7 @@ export default function Home() {
                 opacity: 0,
                 pointerEvents: "none",
                 transition: {
-                  delay: 30
+                  delay: 5
                 }
               }
             }}
