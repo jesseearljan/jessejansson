@@ -16,7 +16,7 @@ export default function Projects() {
         <title>Projects - Jesse jansson</title>
         <meta name="description" content="Alle projecten waar Jesse aan gewerkt heeft." />
         <meta name="author" content="Jesse Jansson" />
-        <meta name="keywords" content="Jesse, Jansson, Jesse Jansson, web developer, developer, 21 jaar, Rotterdam, Nederland, Nederlands, Netherlands, Holland, coding, programmeur, programmeren, projecten, projects, jesse jansson zijn projecten" />
+        <meta name="keywords" content="Jesse, Jansson, Jesse Jansson, web developer, developer, 22 jaar, Rotterdam, Nederland, Nederlands, Netherlands, Holland, coding, programmeur, programmeren, projecten, projects, jesse jansson zijn projecten" />
         <meta name="application-name" content="Jesse Jansson" />
         <link rel="icon" href="/favicon.ico" />
 

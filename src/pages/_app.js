@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import React, { useRef } from "react"
 import Link from 'next/link'
 import { push as Menu } from 'react-burger-menu'
-import styles from '../assets/styles/globals.scss'
 
 function MyApp({ Component, pageProps, router }) {
   const ref = useRef(null);

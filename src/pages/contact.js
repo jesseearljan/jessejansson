@@ -16,7 +16,7 @@ export default function Contact() {
         <title>Contact - Jesse jansson</title>
         <meta name="description" content="Neem contact op met Jesse." />
         <meta name="author" content="Jesse Jansson" />
-        <meta name="keywords" content="Jesse, Jansson, Jesse Jansson, web developer, developer, 21 jaar, Rotterdam, Nederland, Nederlands, Netherlands, Holland, coding, programmeur, programmeren, contact, contact jesse jansson" />
+        <meta name="keywords" content="Jesse, Jansson, Jesse Jansson, web developer, developer, 22 jaar, Rotterdam, Nederland, Nederlands, Netherlands, Holland, coding, programmeur, programmeren, contact, contact jesse jansson" />
         <meta name="application-name" content="Jesse Jansson" />
         <link rel="icon" href="/favicon.ico" />
 

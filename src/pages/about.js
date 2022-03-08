@@ -10,10 +10,10 @@ export default function About() {
     import("@lottiefiles/lottie-player");
   });
   const aboutSteps = [
-    'Im Jesse Jansson a 21 year old dutch web developer 🌐', 500,
-    'Im Jesse Jansson a 21 year old dutch web developer 🌐, I like making weird things with web technologies.', 2000,
-    'Im Jesse Jansson a 21 year old dutch web developer 🌐, I like making weird things with web technologies. When not working or futzing around with code', 100,
-    'Im Jesse Jansson a 21 year old dutch web developer 🌐, I like making weird things with web technologies. When not working or futzing around with code, I study how to escape from School 🏃‍♂️💨'
+    'Im Jesse Jansson a 22 year old dutch web developer 🌐', 500,
+    'Im Jesse Jansson a 22 year old dutch web developer 🌐, I like making weird things with web technologies.', 2000,
+    'Im Jesse Jansson a 22 year old dutch web developer 🌐, I like making weird things with web technologies. When not working or futzing around with code', 100,
+    'Im Jesse Jansson a 22 year old dutch web developer 🌐, I like making weird things with web technologies. When not working or futzing around with code, I study how to escape from School 🏃‍♂️💨'
   ];
   return (
     <div className={styles.container}>
@@ -23,7 +23,7 @@ export default function About() {
         <title>About - Jesse jansson</title>
         <meta name="description" content="Alles over Jesse Jansson, gevestigd in Hillergersberg/Schiebroek Rotterdam." />
         <meta name="author" content="Jesse Jansson" />
-        <meta name="keywords" content="Jesse, Jansson, Jesse Jansson, web developer, developer, 21 jaar, Rotterdam, Nederland, Nederlands, Netherlands, Holland, coding, programmeur, programmeren, about, over, over jesse jansson" />
+        <meta name="keywords" content="Jesse, Jansson, Jesse Jansson, web developer, developer, 22 jaar, Rotterdam, Nederland, Nederlands, Netherlands, Holland, coding, programmeur, programmeren, about, over, over jesse jansson" />
         <meta name="application-name" content="Jesse Jansson" />
         <link rel="icon" href="/favicon.ico" />
 
