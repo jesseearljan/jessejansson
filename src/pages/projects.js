@@ -50,10 +50,10 @@ export default function Projects() {
           <a 
             rel="noreferrer"
             target="_blank"
-            href="https://cococurlsroom.nl/" 
+            href="https://jessejansson.com/" 
             className={styles.card}>
             <h2>CocoCurlsRoom.nl &rarr;</h2>
-            <p>CocoCurlsRoom, the CG barber located in Rotterdam.</p>
+            <p>CocoCurlsRoom, in maintenance.</p>
           </a>
 
           <a
