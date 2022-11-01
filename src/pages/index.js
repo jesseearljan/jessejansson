@@ -78,10 +78,8 @@ export default function Home() {
             <Typical wrapper="h1" steps={steps} loop={Infinity} />
           </div>
           <div className={styles.BtnPlcmnt}>
-                <Link href="/about">
-                    <a className={styles.BtnStyl}>
+                <Link className={styles.BtnStyl} href="/about">
                     Find out more
-                    </a>
                 </Link>
           </div>
           
